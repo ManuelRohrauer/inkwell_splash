@@ -59,12 +59,12 @@ class InkWellSplash extends StatelessWidget {
   final ValueChanged<bool> onFocusChange;
   final bool autofocus;
 
-  Timer doubleTapTimer;// = Timer(Duration(milliseconds: 0), null);
+  Timer doubleTapTimer;
   bool isPressed = false;
   bool isSingleTap = false;
   bool isDoubleTap = false;
 
-  void doubleTapTimerElapsed() {
+  void _doubleTapTimerElapsed() {
     if (isPressed) {
       isSingleTap = true;
     } else {
@@ -90,7 +90,7 @@ class InkWellSplash extends StatelessWidget {
       isDoubleTap = true;
       doubleTapTimer.cancel();
     } else {
-      doubleTapTimer = Timer(doubleTapTime, doubleTapTimerElapsed);
+      doubleTapTimer = Timer(doubleTapTime, _doubleTapTimerElapsed);
     }
     if(this.onTapDown != null) this.onTapDown(details);
   }
@@ -106,11 +106,10 @@ class InkWellSplash extends StatelessWidget {
     return InkWell(
       key: key,
       child: child,
-      onTap: _onTap,
-      //onDoubleTap: onDoubleTap,
+      onTap: (onDoubleTap != null) ? _onTap : onTap,    // if onDoubleTap is not used from user, then route further to onTap
       onLongPress: onLongPress,
-      onTapDown: _onTapDown,
-      onTapCancel: _onTapCancel,
+      onTapDown: (onDoubleTap != null) ? _onTapDown : onTapDown,
+      onTapCancel: (onDoubleTap != null) ? _onTapCancel : onTapCancel,
       onHighlightChanged: onHighlightChanged,
       onHover: onHover,
       focusColor: focusColor,

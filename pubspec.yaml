@@ -1,6 +1,7 @@
 name: inkwell_splash
 description: Flutter package which starts the splash effect of InkWell instantly if onDoubleTap is used.
-version: 0.0.1
+version: 0.1.0
+homepage: https://github.com/ManuelRohrauer/inkwell_splash
 repository: https://github.com/ManuelRohrauer/inkwell_splash
 issue_tracker: https://github.com/ManuelRohrauer/inkwell_splash/issues
 

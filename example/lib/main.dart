@@ -46,7 +46,6 @@ class _MyWidgetState extends State<MyWidget> {
               height: 120,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text('Standard InkWell', style: TextStyle(fontWeight: FontWeight.bold)),
                   SizedBox(height: 20),
@@ -69,7 +68,6 @@ class _MyWidgetState extends State<MyWidget> {
               height: 120,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text('InkWellSplash', style: TextStyle(fontWeight: FontWeight.bold)),
                   SizedBox(height: 20),
