@@ -1,5 +1,6 @@
 # InkWellSplash
 
+[![Pub Package](https://img.shields.io/pub/v/inkwell_splash.svg)](https://pub.dev/packages/inkwell_splash)
 [![Buy Me A Beer](https://img.shields.io/badge/Donate-Buy%20me%20a%20Beer-yellow.svg)](https://www.buymeacoffee.com/manuelrohrauer)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/ManuelRohrauer)
 
