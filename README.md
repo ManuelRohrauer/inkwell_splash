@@ -20,7 +20,7 @@ All other functions are equal to the standard `InkWell` widget
 Add this line to pubspec.yaml
 ```yaml
 dependencies:
-  inkwell_splash: ^0.0.1
+  inkwell_splash: ^0.1.0
 ```
 Import package
 ```dart
