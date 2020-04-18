@@ -13,7 +13,7 @@ If you are using `onTap` & `onDoubleTap` side by side with an `InkWell`, then a 
 
 All other functions are equal to the standard `InkWell` widget
 
-[Interactive Example](https://dartpad.dev/embed-flutter.html?gh_owner=ManuelRohrauer&gh_repo=inkwell_splash&gh_path=example)
+[Interactive Example](https://dartpad.dev/embed-flutter.html?gh_owner=ManuelRohrauer&gh_repo=inkwell_splash&gh_path=dartpad_example&run=true)
  
 ### Usage
 Add this line to pubspec.yaml
@@ -57,5 +57,5 @@ class MyWidget extends StatelessWidget {
 Additional all parameters of standard InkWell can be used as well
 
 ### Note
-If another parent or child gesture widget (e.g. InkWell, GestureDetector) uses its `onDoubleTap` function, the splash of the InkWellSplash is delayed again. This is because, the onTap function of all widgets will then be delayed.
+If another parent or child gesture widget (e.g. InkWell, GestureDetector) uses its own `onDoubleTap` function, the splash of the InkWellSplash is delayed again. This is because, the onTap function of all widgets will then be delayed.
 
