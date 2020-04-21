@@ -97,7 +97,9 @@ class InkWellSplash extends StatelessWidget {
 
   void _onTapCancel() {
     isPressed = isSingleTap = isDoubleTap = false;
-    doubleTapTimer.cancel();
+    if (doubleTapTimer != null && doubleTapTimer.isActive) {
+      doubleTapTimer.cancel();
+    }
     if(this.onTapCancel != null) this.onTapCancel();
   }
 
